@@ -83,7 +83,7 @@ function agregarNumeros(numeros) {
 }
    return suma
  }
- 
+
 
 
 function promedioResultadosTest(resultadosTest) {
@@ -102,7 +102,8 @@ function promedioResultadosTest(resultadosTest) {
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
-  // Tu código:
+  // Tu código: [0 4 6 3]
+  //          i [0 1 2 4]
   var Maximo = numeros[0];
   for (let i = 1; i < numeros.length; i++) {
     if (Maximo < numeros[i]) {
@@ -119,25 +120,27 @@ function multiplicarArgumentos() {
   // Escribe tu código aquí:
   // [3, 5, 2]
   // 0   1   2
-  if (arguments.length === 0) return 0;
-  else if (arguments.length === 1) return arguments[0];
+if (arguments.length === 0) return 0;
+else if (arguments.lenght === 1) return arguments[0];
 var producto = 1
-  for (let i= 0; i < arguments.length; i++) {
-    producto = producto*arguments[i];
-  }
-  return producto;
+for ( let i = 0; i < arguments.length; i++) {
+  producto = producto*arguments[i];
 }
+return producto;
+ }
 
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-  var acc = 0;
-  for (let i = 0; i < arreglo.length; i++) {
-    if (arreglo[i] > 18){
-      acc++;
-    }
+  // [16 21 30 13]
+  //i[0   1  2  3]
+var acc = 0;
+for (let i = 0; i < arreglo.length; i++) {
+  if (arreglo[i] > 18) {
+    acc++
   }
+}
 return acc;
 }
 
@@ -150,7 +153,7 @@ function diaDeLaSemana(numeroDeDia) {
   if (numeroDeDia === 1 || numeroDeDia === 7) {
     return "Es fin de semana";
   } else {
-    return "Es dia Laboral"
+    return "Es dia Laboral";
   }
 } 
 
@@ -173,14 +176,14 @@ function todosIguales(arreglo) {
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
   var respuesta;
-  for (let i = 0; i < arreglo.length -1; i++) {
-  if (arreglo[i] === arreglo[i + 1]) {
-    respuesta = true;
-  } else {
-    return respuesta = false
+  for (let i = 0; i < arreglo.length -1; i++)
+    if (arreglo[i] === arreglo[i + 1]) {
+      return true;
+    } else {
+      return false;
+    }
+    return respuesta;
   }
-} return respuesta;
-} 
 
 
 function mesesDelAño(array) {
@@ -237,7 +240,6 @@ function breakStatement(numero) {
   } else {
     return respuesta
   }
-
 }
 
 
